@@ -12,7 +12,7 @@ const app = express();
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static(__dirname+"/public"));
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'ejs');
 
 
@@ -95,7 +95,7 @@ app.get("/",function(req,res){
       }
       else
       {
-        res.render(__dirname+"/list",{listTitle:"Today",list:founditems});
+        res.render("list",{listTitle:"Today",list:founditems});
       }
     
    
