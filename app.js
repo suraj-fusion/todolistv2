@@ -94,7 +94,7 @@ app.get("/",function(req,res){
       }
       else
       {
-        res.render("list",{listTitle:"Today",list:founditems});
+        res.render(__dirname+"/list",{listTitle:"Today",list:founditems});
       }
     
    
